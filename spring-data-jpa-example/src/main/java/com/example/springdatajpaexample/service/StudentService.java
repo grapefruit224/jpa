@@ -14,6 +14,7 @@ public class StudentService {
     }
 
     public List<Students> selectAllStudents(){
-        return studentRepository.findAll();
+        return studentRepository.findByName("와랄라");
+//        return studentRepository.findAll();
     }
 }
