@@ -17,4 +17,8 @@ public class StudentService {
         return studentRepository.findByName("와랄라");
 //        return studentRepository.findAll();
     }
+
+    public Students insertStudent(Students students){
+        return studentRepository.save(students);
+    }
 }
